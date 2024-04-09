@@ -3,7 +3,6 @@ package com.mowitnow.mowerkata.model;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Objects;
 
 @Data
 @NoArgsConstructor
@@ -24,8 +23,4 @@ public class Lawn {
         return width == lawn.width && height == lawn.height;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(width, height);
-    }
 }

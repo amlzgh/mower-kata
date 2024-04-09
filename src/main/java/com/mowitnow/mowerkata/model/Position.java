@@ -3,8 +3,6 @@ package com.mowitnow.mowerkata.model;
 
 import lombok.Data;
 
-import java.util.Objects;
-
 @Data
 public class Position {
     private int x;
@@ -22,8 +20,4 @@ public class Position {
         return x == position.x && y == position.y;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(x, y);
-    }
 }
